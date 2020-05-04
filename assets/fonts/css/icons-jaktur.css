@@ -43,3 +43,27 @@
 .icon-jaktur-maps {
   content: url(svgs/gps.svg);
 }
+
+.icon-jaktur-arm {
+  content: url(svgs/arm.svg);
+}
+
+.icon-jaktur-sale {
+  content: url(svgs/sale.svg);
+}
+
+.icon-jaktur-male {
+  content: url(svgs/male.svg);
+}
+
+.icon-jaktur-woman {
+  content: url(svgs/woman.svg);
+}
+
+.icon-jaktur-book {
+  content: url(svgs/open-book.svg);
+}
+
+.icon-jaktur-document {
+  content: url(svgs/document.svg);
+}
