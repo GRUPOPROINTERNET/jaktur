@@ -46,10 +46,7 @@ function initCarouselUnidadNegocio(){
     fade: true,
     asNavFor: '.slider-nav', 
     centerPadding: '0px',
-    autoplay: true,
-    autoplaySpeed: 6000, 
-    infinite: true, 
-    touchMove:true,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -60,10 +57,7 @@ function initCarouselUnidadNegocio(){
           fade: true,
           asNavFor: '.slider-nav', 
           centerPadding: '0px',
-          autoplay: true,
-          autoplaySpeed: 6000, 
-          infinite: true, 
-          touchMove:true,
+          autoplay: false
         }
       },
       {
@@ -76,10 +70,7 @@ function initCarouselUnidadNegocio(){
           fade: true,
           asNavFor: '.slider-nav', 
           centerPadding: '0px',
-          autoplay: true,
-          autoplaySpeed: 6000, 
-          infinite: true, 
-          touchMove:true,
+          autoplay: false
         }
       },
       {
@@ -92,10 +83,7 @@ function initCarouselUnidadNegocio(){
           fade: true,
           asNavFor: '.slider-nav', 
           centerPadding: '0px',
-          autoplay: true,
-          autoplaySpeed: 6000,
-          infinite: true, 
-          touchMove:true,  
+          autoplay: false
         }
       }
     ]
