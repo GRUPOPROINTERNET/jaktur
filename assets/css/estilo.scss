@@ -1245,7 +1245,7 @@ header#slideHome{
    padding: calc(50vw - 50% + 40px) 60px;
    max-height: 92vh;
    @media(max-width:767px){  
-    max-height: 150vh;
+    max-height: 115vh;
     overflow: hidden;
    }
    }
@@ -6208,7 +6208,6 @@ Página unidad de negocio
 /*------------------------------------------------------------------
 Carousel Post
 -------------------------------------------------------------------*/
-
  .carouselPost{
     .slider-for2{
       .slick-slide {     
@@ -6221,6 +6220,9 @@ Carousel Post
           background-color: $bg-color-azulceleste;
           p{
            font-size: 16px;
+            @media(max-width: 767px){
+              font-size: 13px;
+            }
           }
         }
         .slick-list.draggable {   
@@ -6274,6 +6276,11 @@ Carousel Post
       top:29%;
       left: unset;
     }  
+    @media(max-width: 767px){
+      .slick-prev, .slick-next{
+        display: none !important;
+      }
+    }
  } 
  /*----------------------------------
  Cargar archivo

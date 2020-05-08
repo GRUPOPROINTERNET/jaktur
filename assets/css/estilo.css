@@ -1277,7 +1277,7 @@ header#slideHome #sliderHm1, header#slideHome #sliderHm2 {
 
 @media (max-width: 767px) {
   .NavSlick {
-    max-height: 150vh;
+    max-height: 115vh;
     overflow: hidden;
   }
 }
@@ -6026,6 +6026,12 @@ Carousel Post
   font-size: 16px;
 }
 
+@media (max-width: 767px) {
+  .carouselPost .slider-for2 .slick-slide .descripcion p {
+    font-size: 13px;
+  }
+}
+
 .carouselPost .slider-for2 .slick-slide .slick-list.draggable {
   box-shadow: 0px 0px 10px 1px #ebedf7 !important;
 }
@@ -6077,6 +6083,12 @@ Carousel Post
   right: -4vw;
   top: 29%;
   left: unset;
+}
+
+@media (max-width: 767px) {
+  .carouselPost .slick-prev, .carouselPost .slick-next {
+    display: none !important;
+  }
 }
 
 /*----------------------------------

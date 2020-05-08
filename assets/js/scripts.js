@@ -46,7 +46,8 @@ function initCarouselUnidadNegocio(){
     fade: true,
     asNavFor: '.slider-nav', 
     centerPadding: '0px',
-    autoplay: false   
+    autoplay: false,
+    touchMove:true   
   });
   $('.slider-nav').slick({
     vertical:true,
@@ -55,8 +56,8 @@ function initCarouselUnidadNegocio(){
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     rows:2,
-    infinite: false,
     autoplay: false,
+    focusOnSelect: true
   });
 }
 function initCarouselPromociones(){
@@ -349,14 +350,32 @@ function initCarouselGenericoNavImg(){
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    fade: true,
     asNavFor: '.slider-nav2',
     mobileFirst:true,
     speed: 6000,
     touchMove:true,	
     infinite: true,
     dots: false,
-    autoplay: true
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          fade: true,
+          asNavFor: '.slider-nav2',
+          mobileFirst:true,
+          speed: 6000,
+          touchMove:true,	
+          infinite: true,
+          dots: false,
+          autoplay: true,
+        }
+      }
+
+    ]
   });
   $('.slider-nav2').slick({
     slidesToShow: 4,
@@ -366,7 +385,37 @@ function initCarouselGenericoNavImg(){
     centerMode: true,
     focusOnSelect: true,
     mobileFirst:true,
-    centerPadding: '10px',
+    centerPadding: '20px',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.slider-for2',
+          dots: false,
+          centerMode: true,
+          focusOnSelect: true,
+          mobileFirst:true,
+          centerPadding: '20px',
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          asNavFor: '.slider-for2',
+          dots: false,
+          centerMode: true,
+          focusOnSelect: true,
+          mobileFirst:true,
+          centerPadding: '10px',
+          arrows: false,
+        }
+      }
+    ]
   });
 }
 function initCarouselNosotros(){
@@ -485,6 +534,7 @@ function initCarouselNosotros(){
     ]
   });
 }
+
 /*Carga de archivo*/
 function readFile(input) {
   if (input.files && input.files[0]) {
