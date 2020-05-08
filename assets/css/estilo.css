@@ -1276,6 +1276,13 @@ header#slideHome #sliderHm1, header#slideHome #sliderHm2 {
 }
 
 @media (max-width: 767px) {
+  .NavSlick {
+    max-height: 150vh;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 767px) {
   .unidades-negocios {
     background-color: #f5f6fb;
   }
@@ -6283,4 +6290,262 @@ Carousel Post
   padding: 10px 0;
   color: white;
   border-radius: 0 0 20px 0;
+}
+
+/*---------------------------------------------------
+Pagina Nosotros
+-------------------------------------------------*/
+.paginaNosotros .resaltar {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0c1868;
+}
+
+@media (min-width: 768px) {
+  .paginaNosotros .item-nosotros {
+    overflow: hidden;
+    width: 36vw !important;
+    box-shadow: 0px 0px 5px 1px #d1d7f0c4;
+    border-radius: 20px 0 20px 0;
+    margin: 0 10px;
+  }
+  .paginaNosotros .item-nosotros .caption-descripcion {
+    background-color: white;
+    padding: 20px 25px;
+  }
+  .paginaNosotros .item-nosotros .caption-descripcion .texto {
+    font-size: 18px;
+    color: #0c1868;
+    font-weight: 600;
+  }
+  .paginaNosotros .item-nosotros .caption-descripcion .fecha {
+    font-size: 28px;
+    font-weight: 700;
+    color: #c35146;
+  }
+  .paginaNosotros .item-nosotros .caption-descripcion p {
+    padding: 0px;
+    margin: 0px;
+  }
+  .paginaNosotros .item-nosotros .img {
+    width: 100%;
+    height: auto;
+  }
+  .paginaNosotros .nosotros-nav .item-NavUnidNegoc {
+    left: 17vw;
+    position: relative;
+    margin: 0 3px;
+  }
+  .paginaNosotros .nosotros-nav .item-NavUnidNegoc .franja {
+    width: 50vw;
+  }
+  .paginaNosotros .nosotros-nav .title {
+    color: #c35146;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .paginaNosotros .nosotros-nav .slick-track {
+    height: 94px;
+  }
+  .paginaNosotros .nosotros-nav .slick-dots {
+    position: unset;
+  }
+  .paginaNosotros .nosotros-nav .slick-dots li {
+    display: none;
+  }
+  .paginaNosotros .nosotros-nav .slick-dots:before {
+    content: url("control-horizontal.png");
+    width: 100%;
+    display: flex;
+    top: 30px;
+    position: relative;
+  }
+  .paginaNosotros .nosotros-nav .slick-slide {
+    margin-bottom: 32px;
+  }
+  .paginaNosotros .slick-center, .paginaNosotros .slick-active {
+    border-radius: 0 20px 0 0;
+    -webkit-filter: opacity(0.5);
+    filter: opacity(0.5);
+  }
+  .paginaNosotros .slick-center .item-nosotros .img, .paginaNosotros .slick-active .item-nosotros .img {
+    display: none;
+  }
+  .paginaNosotros .slick-current {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+  }
+  .paginaNosotros .slick-current .item-nosotros .img {
+    display: block;
+  }
+  .paginaNosotros .slick-slide {
+    margin-bottom: 35px;
+  }
+  .paginaNosotros button {
+    border: 0px;
+    background-color: transparent;
+  }
+  .paginaNosotros .boton {
+    display: grid;
+    grid-template-areas: "icon cta";
+    grid-template-columns: 70px auto;
+    grid-template-rows: auto;
+    border-radius: 20px 0 20px 0;
+    position: relative;
+  }
+  .paginaNosotros .boton .icon {
+    grid-area: icon;
+    color: white;
+    font-weight: 700;
+    background-color: #dd0000;
+    border-radius: 20px 0 0 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px 2px 24px 2px;
+  }
+  .paginaNosotros .boton .icon i {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 24px;
+  }
+  .paginaNosotros .boton .cta {
+    grid-area: cta;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 0 0 20px 0;
+    background-color: #bd0000;
+    padding: 24px 2px 24px 2px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .paginaNosotros .item-nosotros {
+    overflow: hidden;
+    width: 66vw !important;
+    box-shadow: 0px 0px 5px 1px #d1d7f0c4;
+    border-radius: 20px 0 20px 0;
+    margin: 0 20px 0 10px;
+  }
+  .paginaNosotros .item-nosotros .caption-descripcion {
+    background-color: white;
+    padding: 20px 25px;
+  }
+  .paginaNosotros .item-nosotros .caption-descripcion .texto {
+    font-size: 13px;
+    line-height: 16px;
+    color: #0c1868;
+    font-weight: 600;
+  }
+  .paginaNosotros .item-nosotros .caption-descripcion .fecha {
+    font-size: 22px;
+    font-weight: 700;
+    color: #c35146;
+  }
+  .paginaNosotros .item-nosotros .caption-descripcion .descripcion {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .paginaNosotros .item-nosotros .caption-descripcion p {
+    padding: 0px;
+    margin: 0px;
+  }
+  .paginaNosotros .item-nosotros .img {
+    width: 100%;
+    height: auto;
+  }
+  .paginaNosotros .item-nosotros .slick-slide img {
+    width: auto;
+    height: 100vw;
+  }
+  .paginaNosotros .item-nosotros .slick-slide {
+    margin-bottom: 30px;
+  }
+  .paginaNosotros .item-nosotros .slick-center, .paginaNosotros .item-nosotros .slick-active {
+    border-radius: 0 20px 0 0;
+    -webkit-filter: opacity(0.5);
+    filter: opacity(0.5);
+  }
+  .paginaNosotros .item-nosotros .slick-center .item-nosotros .img, .paginaNosotros .item-nosotros .slick-active .item-nosotros .img {
+    display: none;
+  }
+  .paginaNosotros .item-nosotros .slick-current {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+  }
+  .paginaNosotros .item-nosotros .slick-current .item-nosotros .img {
+    display: block;
+  }
+  .paginaNosotros .nosotros-nav .item-NavUnidNegoc {
+    left: 5vw;
+    position: relative;
+    margin: 0 3px;
+  }
+  .paginaNosotros .nosotros-nav .item-NavUnidNegoc .franja {
+    width: 50vw;
+  }
+  .paginaNosotros .nosotros-nav .title {
+    color: #c35146;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .paginaNosotros .nosotros-nav .slick-track {
+    height: 94px;
+  }
+  .paginaNosotros .nosotros-nav .slick-dots {
+    position: unset;
+  }
+  .paginaNosotros .nosotros-nav .slick-dots li {
+    display: none;
+  }
+  .paginaNosotros .nosotros-nav .slick-dots:before {
+    content: url("control-horizontal.png");
+    width: 100%;
+    display: flex;
+    top: 30px;
+    position: relative;
+  }
+  .paginaNosotros .nosotros-nav .slick-slide {
+    margin-bottom: 32px;
+  }
+  .paginaNosotros .boton {
+    display: grid;
+    grid-template-areas: "icon cta";
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto;
+    border-radius: 20px 0 20px 0;
+    margin: 20px;
+    position: relative;
+  }
+  .paginaNosotros .boton .icon {
+    grid-area: icon;
+    color: white;
+    font-weight: 700;
+    background-color: #dd0000;
+    border-radius: 20px 0 0 0;
+    width: 100%;
+    height: 100%;
+    padding: 14px 2px 2px 2px;
+  }
+  .paginaNosotros .boton .icon i {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 24px;
+  }
+  .paginaNosotros .boton .cta {
+    grid-area: cta;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0 0 20px 0;
+    background-color: #bd0000;
+    padding: 24px 2px 24px 2px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+  }
 }

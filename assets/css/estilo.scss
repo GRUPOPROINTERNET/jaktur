@@ -723,7 +723,6 @@ header#slideHome{
     .slick-track{
       top: -20px;
     }
-
   .slick-initialized .slick-slide {    
     margin: 40px;  
     @media(max-width:767px){
@@ -1245,6 +1244,10 @@ header#slideHome{
   .NavSlick{
    padding: calc(50vw - 50% + 40px) 60px;
    max-height: 92vh;
+   @media(max-width:767px){  
+    max-height: 150vh;
+    overflow: hidden;
+   }
    }
   @media(max-width:767px){  
     .unidades-negocios{  
@@ -6308,7 +6311,6 @@ Carousel Post
             }
       }
     }
-
     .botonNaranja{
       position: unset;
     }
@@ -6370,8 +6372,7 @@ Carousel Post
       &.visible{
         display:block !important;
       }
-    }
-    
+    }    
     .dropzone,
     .dropzone:focus {
       position: absolute;
@@ -6465,4 +6466,282 @@ Carousel Post
         }
       }
     }
+}
+
+
+/*---------------------------------------------------
+Pagina Nosotros
+-------------------------------------------------*/
+.paginaNosotros{
+    .resaltar{
+      font-size: 18px;
+      font-weight: 500;
+      color:$color-brand;
+    }
+  @media(min-width:768px){
+    .item-nosotros{ 
+      overflow: hidden;
+      width: 36vw !important;
+      box-shadow: 0px 0px 5px 1px #d1d7f0c4;
+      border-radius: 20px 0 20px 0;
+      margin: 0 10px;
+      .caption-descripcion{  
+        background-color: white;   
+        padding:20px 25px;      
+        .texto{
+          font-size: 18px;
+          color:$color-brand;
+          font-weight: 600;
+        }
+        .fecha{
+          font-size: 28px;
+          font-weight: 700;
+          color:$color-brand2;
+        }
+        p{
+          padding: 0px;
+          margin:0px;
+        }
+      }
+      .img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .nosotros-nav{
+      .item-NavUnidNegoc{
+        left: 17vw;
+        position: relative;
+        margin: 0 3px;
+        .franja{
+          width: 50vw;
+        }   
+      }
+      .title{
+      color:$color-brand2;
+      font-size: 22px;
+      font-weight: 700;
+      }
+      .slick-track {
+        height: 94px;
+      }
+      .slick-dots{
+        li{
+          display: none;
+        }
+        position: unset;
+        &:before{
+          content:url('control-horizontal.png');
+          width: 100%;      
+          display: flex;
+          top: 30px;
+          position: relative;
+        }
+      }
+      .slick-slide{
+        margin-bottom: 32px;
+      } 
+    }  
+    .slick-center,.slick-active{ 
+              border-radius: 0 20px 0 0;
+              -webkit-filter: opacity(0.5);  
+              filter: opacity(0.5);
+              .item-nosotros{  
+                .img{
+                  display:none;
+                }
+              }
+    }  
+    .slick-current{
+      -webkit-filter: opacity(1);
+              filter: opacity(1);
+              .item-nosotros{  
+                .img{
+                  display:block;
+                }
+              }
+    }
+    .slick-slide{
+      margin-bottom: 35px;
+    }
+
+    button{
+      border: 0px;
+      background-color: transparent;
+    }
+    .boton{    
+      display:grid;
+      grid-template-areas: "icon cta";
+      grid-template-columns: 70px auto;
+      grid-template-rows: auto;
+      border-radius: 20px 0 20px 0;
+      position: relative; 
+       
+      .icon{
+        grid-area: icon;
+        color: white;
+        font-weight: 700;
+        background-color: #dd0000;
+        border-radius: 20px 0 0 0;
+        width: 100%;
+        height: 100%;
+        padding: 24px 2px 24px 2px;
+        i{
+          top: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          height: 24px;
+        }   
+      }
+      .cta{
+        grid-area: cta;
+        color:white;  
+        font-size: 24px; 
+        font-weight: 700;  
+        border-radius: 0 0 20px 0;           
+        background-color: rgb(189, 0, 0); 
+        padding: 24px 2px 24px 2px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  @media(min-width:320px) and (max-width:767px){
+    .item-nosotros{ 
+      overflow: hidden;
+      width: 66vw !important;
+      box-shadow: 0px 0px 5px 1px #d1d7f0c4;
+      border-radius: 20px 0 20px 0;
+      margin: 0 20px 0 10px;
+      .caption-descripcion{  
+        background-color: white;   
+        padding:20px 25px;      
+        .texto{
+          font-size: 13px;
+          line-height: 16px;
+          color:$color-brand;
+          font-weight: 600;
+        }
+        .fecha{
+          font-size: 22px;
+          font-weight: 700;
+          color:$color-brand2;
+        }
+        .descripcion{
+          font-size: 14px;
+          line-height: 16px;
+        }
+        p{
+          padding: 0px;
+          margin:0px;
+        }
+      }
+      .img{
+        width: 100%;
+        height: auto;
+      }
+      .slick-slide img{
+        width: auto;
+        height: 100vw;
+      }
+      .slick-slide{
+        margin-bottom: 30px;
+      } 
+      .slick-center,.slick-active{ 
+        border-radius: 0 20px 0 0;
+        -webkit-filter: opacity(0.5);  
+        filter: opacity(0.5);
+        .item-nosotros{  
+          .img{
+            display:none;
+          }
+        }
+      }  
+      .slick-current{
+      -webkit-filter: opacity(1);
+              filter: opacity(1);
+              .item-nosotros{  
+                .img{
+                  display:block;
+                }
+              }
+      }    
+    }
+    .nosotros-nav{
+      .item-NavUnidNegoc{
+        left: 5vw;
+        position: relative;
+        margin: 0 3px;
+        .franja{
+          width: 50vw;
+        }        
+      }      
+      .title{
+      color:$color-brand2;
+      font-size: 22px;
+      font-weight: 700;
+      }
+      .slick-track {
+        height: 94px;
+      }
+      .slick-dots{
+        li{
+          display: none;
+        }
+        position: unset;
+        &:before{
+          content:url('control-horizontal.png');
+          width: 100%;      
+          display: flex;
+          top: 30px;
+          position: relative;
+        }
+      }
+
+
+      .slick-slide{
+        margin-bottom: 32px;
+      } 
+
+    }   
+    
+    .boton{    
+      display:grid;
+      grid-template-areas: "icon cta";
+      grid-template-columns: 50px auto;
+      grid-template-rows: auto;
+      border-radius: 20px 0 20px 0; 
+      margin: 20px;
+      position: relative;       
+      .icon{
+        grid-area: icon;
+        color: white;
+        font-weight: 700;
+        background-color: #dd0000;
+        border-radius: 20px 0 0 0;
+        width: 100%;
+        height: 100%;
+        padding: 14px 2px 2px 2px;       
+          i{
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            height: 24px;
+          }        
+      }
+      .cta{
+        grid-area: cta;
+        color:white;  
+        font-size: 14px; 
+        font-weight: 700;  
+        border-radius: 0 0 20px 0;           
+        background-color: rgb(189, 0, 0); 
+        padding: 24px 2px 24px 2px;
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+      }
+    }
+  }
 }

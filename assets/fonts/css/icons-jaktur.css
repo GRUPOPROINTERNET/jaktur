@@ -67,3 +67,7 @@
 .icon-jaktur-document {
   content: url(svgs/document.svg);
 }
+
+.icon-jaktur-plus {
+  content: url(svgs/plus.svg);
+}

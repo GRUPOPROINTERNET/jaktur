@@ -7,7 +7,7 @@ jQuery(function() {
     initCarouselRecomendaciones();
     initCarouselRelacionados();
     initCarouselGenericoNavImg();
-    initCarouselNosotros();
+    initCarouselNosotros();   
 });
 /*Inicia lightgallery promociones*/ 
 for (var i = 1; i < 5; i++){
@@ -46,47 +46,7 @@ function initCarouselUnidadNegocio(){
     fade: true,
     asNavFor: '.slider-nav', 
     centerPadding: '0px',
-    autoplay: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          fade: true,
-          asNavFor: '.slider-nav', 
-          centerPadding: '0px',
-          autoplay: false
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          dots: false,
-          fade: true,
-          asNavFor: '.slider-nav', 
-          centerPadding: '0px',
-          autoplay: false
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          dots: false,
-          fade: true,
-          asNavFor: '.slider-nav', 
-          centerPadding: '0px',
-          autoplay: false
-        }
-      }
-    ]
+    autoplay: false   
   });
   $('.slider-nav').slick({
     vertical:true,
@@ -94,8 +54,7 @@ function initCarouselUnidadNegocio(){
     slidesToShow: 9,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
-    rows:2, 
-    cols:2,
+    rows:2,
     infinite: false,
     autoplay: false,
   });
@@ -412,17 +371,18 @@ function initCarouselGenericoNavImg(){
 }
 function initCarouselNosotros(){
   "use strict";  
-  $('.carousel-nosotros').slick({
+  $('.nosotros-for').slick({
     centerMode: true,
-    centerPadding: '20px',
+    centerPadding: '0px',
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 8000,
     variableWidth: true,
     infinite: true,
     adaptiveHeight: false,
     touchMove:true,
+    asNavFor: '.nosotros-nav',
     responsive: [
       {
         breakpoint: 1024,
@@ -433,7 +393,7 @@ function initCarouselNosotros(){
           slidesToShow: 3,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 6000,
+          autoplaySpeed: 8000,
           variableWidth: true,
           infinite: true,
           touchMove:true,
@@ -442,32 +402,84 @@ function initCarouselNosotros(){
       {
         breakpoint: 768,
         settings: {
+          centerMode: true,
           arrows: false,
           dots:false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,          
           centerPadding: '0px',
           infinite: true,
           autoplay: true,         
-          speed: 6000,
+          speed: 8000,
+          mobileFirst:true,
           touchMove:true,
         }
       },
       {
         breakpoint: 480,
         settings: {
-          centerMode: false,
+          centerMode: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
           autoplay: true,
           arrows: false,
-          speed: 5000,
+          speed: 8000,
           mobileFirst:true,
-          centerPadding: '0px',
-          touchMove:true,
+          centerPadding: '10px',
+          touchMove:true,          
+        }
+      }
+    ]
+  });
+  $('.nosotros-nav').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.nosotros-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true,
+    mobileFirst:true,
+    centerPadding: '0px',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          asNavFor: '.nosotros-for',
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true,
+          mobileFirst:true,
+          centerPadding: '0px'
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          asNavFor: '.nosotros-for',
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true,
+          mobileFirst:true,
+          centerPadding: '20px'
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          asNavFor: '.nosotros-for',
+          dots: true,
+          centerMode: false,
+          focusOnSelect: false,
+          mobileFirst:true,
+          centerPadding: '20px'
         }
       }
     ]
@@ -517,3 +529,4 @@ $('.remove-preview').on('click', function() {
   previewZone.addClass('hidden');
   reset(dropzone);
 });
+
