@@ -1277,7 +1277,7 @@ header#slideHome #sliderHm1, header#slideHome #sliderHm2 {
 
 @media (max-width: 767px) {
   .NavSlick {
-    max-height: 115vh;
+    max-height: 100vh;
     overflow: hidden;
   }
 }
