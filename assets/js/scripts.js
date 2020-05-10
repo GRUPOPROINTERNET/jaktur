@@ -352,10 +352,10 @@ function initCarouselGenericoNavImg(){
     arrows: true,
     asNavFor: '.slider-nav2',
     mobileFirst:true,
-    speed: 6000,
     touchMove:true,	
     infinite: true,
     dots: false,
+    speed: 6000,
     autoplay: true,
     responsive: [
       {
@@ -364,7 +364,6 @@ function initCarouselGenericoNavImg(){
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
-          fade: true,
           asNavFor: '.slider-nav2',
           mobileFirst:true,
           speed: 6000,
@@ -383,22 +382,28 @@ function initCarouselGenericoNavImg(){
     asNavFor: '.slider-for2',
     dots: false,
     centerMode: true,
-    focusOnSelect: true,
     mobileFirst:true,
-    centerPadding: '20px',
+    centerPadding: '25px',
+    touchMove:true,	
+    speed: 6000,
+    autoplay: true,
+    infinite: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
           asNavFor: '.slider-for2',
           dots: false,
           centerMode: true,
-          focusOnSelect: true,
           mobileFirst:true,
-          centerPadding: '20px',
+          centerPadding: '24px',
           arrows: false,
+          touchMove:true,	
+          speed: 6000,
+          autoplay: true,
+          infinite: true,
         }
       },
       {
@@ -408,12 +413,26 @@ function initCarouselGenericoNavImg(){
           slidesToScroll: 1,
           asNavFor: '.slider-for2',
           dots: false,
-          centerMode: true,
-          focusOnSelect: true,
+          centerMode: false,
           mobileFirst:true,
           centerPadding: '10px',
           arrows: false,
+          touchMove:true,	
+          infinite: true,
+        },
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          asNavFor: '.slider-for2',
+          dots: false,
+          mobileFirst:true,
+          centerPadding: '20px',
+          arrows: false,
+          touchMove:true,	
+          infinite: true,
         }
+
       }
     ]
   });
@@ -427,6 +446,7 @@ function initCarouselNosotros(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 8000,
+    arrows: true,
     variableWidth: true,
     infinite: true,
     adaptiveHeight: false,
@@ -436,7 +456,7 @@ function initCarouselNosotros(){
       {
         breakpoint: 1024,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
           centerPadding: '0px',
           slidesToShow: 3,
@@ -452,7 +472,7 @@ function initCarouselNosotros(){
         breakpoint: 768,
         settings: {
           centerMode: true,
-          arrows: false,
+          arrows: true,
           dots:false,
           slidesToShow: 3,
           slidesToScroll: 1,          
@@ -473,7 +493,7 @@ function initCarouselNosotros(){
           infinite: true,
           dots: false,
           autoplay: true,
-          arrows: false,
+          arrows: true,
           speed: 8000,
           mobileFirst:true,
           centerPadding: '10px',
@@ -579,4 +599,17 @@ $('.remove-preview').on('click', function() {
   previewZone.addClass('hidden');
   reset(dropzone);
 });
+
+
+/*Cambiar franja*/
+
+if (document.querySelector(".slick-current .rojo")) {  
+  var f_rojo = document.getElementsByClassName('f-rojo');
+  f_rojo.style.display = 'block';
+} 
+if (document.querySelector(".slick-current .azul")) {
+  var f_azul = document.getElementsByClassName('f-azul');
+  f_azul.style.display = 'block';
+} 
+
 
